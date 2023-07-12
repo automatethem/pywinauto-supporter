@@ -1,4 +1,4 @@
-# win32gui-supporter
+# pywinauto-supporter
 
 ```
 from win32gui_supporter.utils import blink
