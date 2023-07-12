@@ -1,10 +1,11 @@
 import win32gui
 import win32con
 import threading
-from pywinauto import Desktop, Application
+#from pywinauto import Desktop, Application
 import time
+import pywinauto
 
-def run(self, handle):
+def run(handle):
     #https://groups.google.com/g/python_inside_maya/c/qZOWB6_8E3g
     for i in range(2):
         #change_background_color(hwnd, color1)
@@ -25,6 +26,6 @@ def blink(process_id, handle):
     t = threading.Thread(target=run, args=[handle])
     t.start()
 '''
-def blink(process_id, handle):
+def blink(handle):
     t = threading.Thread(target=run, args=[handle])
     t.start()
