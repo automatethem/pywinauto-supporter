@@ -1,2 +1,3 @@
 #pip install -r requirements.txt
+pywinauto
 win32gui
