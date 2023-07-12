@@ -16,6 +16,6 @@ top_window = app.top_window()
 one_window = top_window.child_window(title="1")
 #one_window.wrapper_object().click_input()
 
-#blink(top_window.handle)
-blink(one_window.handle)
+blink(top_window.handle)
+#blink(one_window.handle)
 ```
