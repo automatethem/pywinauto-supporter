@@ -23,7 +23,12 @@ if handle and process_id:
 
 ```
 
-
+        application = pywinauto.application.Application(backend='uia')
+        application = application.connect(title='계산기')
+        top_window = application.top_window()
+        
+        one_window = top_window.child_window(title="1")
+        one_window.wrapper_object().click_input()
 
 
     app = Application(backend='uia').connect(process=int(process_id)) #프로세스 pid로 연결하는 방법
