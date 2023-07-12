@@ -1,10 +1,6 @@
 # pywinauto-supporter
 
 ```
-import win32gui
-import win32con
-import threading
-import time
 import pywinauto
 from pywinauto_supporter.utils import blink
 
