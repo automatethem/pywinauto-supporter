@@ -1,7 +1,7 @@
 # pywinauto-supporter
 
 ```
-from win32gui_supporter.utils import blink
+from pywinauto_supporter.utils import blink
 
 handle = None 
 process_id = None 
