@@ -19,4 +19,12 @@ for name, value in self.tree_model.props_dict.get(data):
 
 if handle and process_id:
     blink(process_id, handle)
+
+
+
+
+app = Application(backend='uia').connect(process=int(process_id)) #프로세스 pid로 연결하는 방법
+#app = Application(backend='uia').connect(title_re="Notepad\+\+") #정규식으로 프로그램 title을 검색해서 연결하는 방법
+window = app.window(handle=handle)
+#window.wrapper_object().set_focus()
 ```
